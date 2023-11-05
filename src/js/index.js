@@ -2,6 +2,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faClock} from '@fortawesome/free-solid-svg-icons'
 
 // include your styles into the webpack bundle
 import "../styles/index.css";
@@ -10,7 +12,7 @@ function SimpleCounter(props){
     return (
         <div className="counter">
             <div className="clock">
-                R
+                <FontAwesomeIcon icon={faClock} />
             </div>
             <div className="six">{props.sixDigit %10}</div>
             <div className="five">{props.fiveDigit %10}</div>
