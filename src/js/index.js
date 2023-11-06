@@ -43,8 +43,6 @@ setInterval(function(){
     const two = Math.floor(counter/10);
     const one = Math.floor(counter/1);
     
-    console.log(six, five, four, three, two, one);
-
     counter++;
 
 ReactDOM.render(
